@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Coder</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
+        </div>
+        <div class="text"> BMW Coding CheatSheets</div>
+        <div class="navbar">
+            <a href="../index.html">
+                <div class="button active">
+                    Home
+                </div>
+            </a>
+            <a href="../subpages/help.html">
+                <div class="button">
+                    Help Desk
+                </div>
+            </a>
+            <a href="contacts.html">
+                <div class="button">
+                    Contacts
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="title">BMW F10, F11, F12, F13 Coding CheatSheet</div>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Function</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td rowspan="7">ACSM</td>
+                <td>GWF_SBR_WARNDAUER</td>
+                <td>Werte = 01 (for 1 second)</td>
+                <td rowspan="7">Seat Belt Reminders & Warnings</td>
+            </tr>
+            <tr>
+                <td>Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td>Gurtzustandsanzeige_Fahrer_GWF_GZA_FA</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td>SBR_BF_GWF_SBR_BF</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td>SBR_FA_GWF_SBR_FA</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td>SPW_BF</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td>SPW_FA</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td rowspan="12">CAS</td>
+                <td>TC_MSA_DEFAULT_OFF</td>
+                <td>aktiv / Werte=01</td>
+                <td>Turn Auto Start/Stop OFF by default</td>
+            </tr>
+            <tr>
+                <td>TC_MSA_MEMORY</td>
+                <td>aktiv / Werte=01</td>
+                <td>Auto Start/Stop function memory</td>
+            </tr>
+            <tr>
+                <td>TC_LOGIC_KLR_OFF_DOOR</td>
+                <td>aktiv</td>
+                <td>Turn off radio and navi when opening door</td>
+            </tr>
+            <tr>
+                <td>ER_KEYOUT_AUTOVR</td>
+                <td>aktiv / Werte=01</td>
+                <td rowspan="2">Turn off radio and navi when opening door</td>
+            </tr>
+            <tr>
+                <td>CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK</td>
+                <td>aktiv / Werte=01</td>
+            </tr>
+            <tr>
+                <td>OPEN_RSCR_WITH_REMOTE_KEY_SPFN</td>
+                <td>aktiv / Werte=01</td>
+                <td>Remote Key opens with 4th button tailgate or rear window</td>
+            </tr>
+            <tr>
+                <td>REAR_SCREEN_IS_PRIMARY</td>
+                <td>aktiv / Werte=01</td>
+                <td>Remote Key opens with a 4th button tailgate or rear window</td>
+            </tr>
+            <tr>
+                <td>REMOTE_KEY_SPECIAL_FCT</td>
+                <td>aktiv / Werte=01</td>
+                <td>Follow-Me-Home Lighting with 4th button</td>
+            </tr>
+            <tr>
+                <td>KOMFORTSCHLIESSUNG_FB</td>
+                <td>aktiv / Werte=01</td>
+                <td rowspan="2">Comfort close mirrors + windows + roof</td>
+            </tr>
+            <tr>
+                <td>KOMFORTSCHLIESSUNG_PA</td>
+                <td>aktiv / Werte=01</td>
+            </tr>
+            <tr>
+                <td>KMFRT_SCHLIESSEN</td>
+                <td>wert_01 / Werte=00</td>
+                <td>Close Button Delay for side mirrors closing</td>
+            </tr>
+            <tr>
+                <td>USE_FBD4</td>
+                <td>aktiv / Werte=01</td>
+                <td>Button 4 opens the HK</td>
+            </tr>
+            <tr>
+                <td rowspan="3">CMB_MEDIA</td>
+                <td>INBAND_RINGING</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Play telephone ringtone through the car speakers</td>
+            </tr>
+            <tr>
+                <td>RINGTONE</td>
+                <td>ring_tone2 / Werte=01</td>
+                <td>Play a different ringtone built in car</td>
+            </tr>
+            <tr>
+                <td>MY_INFO_SUPPORTED_POIS</td>
+                <td> </td>
+                <td>Increase stored addresses from 25 to 50</td>
+            </tr>
+            <tr>
+                <td rowspan="25">FRM</td>
+                <td>ASP_BORDSTEINAUTOMATIK_DELTA</td>
+                <td>Werte=5A</td>
+                <td>Passenger mirror moves down when reverse gear</td>
+            </tr>
+            <tr>
+                <td>ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN</td>
+                <td>aktiv / Werte=01</td>
+                <td>needed for KOMFORTSCHLIESSUNG</td>
+            </tr>
+            <tr>
+                <td>FH_TUER_AUF_STOP_MAUT</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Opening doors (FRONT) will not interrupt window roll up operation.</td>
+            </tr>
+            <tr>
+                <td>DRL_MODUS</td>
+                <td colspan="2">0: DRL disabled <br> 1: DRL_H via beam, halogen U.S. (without lights)<br> 2: DRL_L via low beam<br> 3: DRL_S via separate TFL; U.S. Xenon (rings + bottom)<br> 4: TFL_S via separate TFL; ECE Xenon (rings + bottom)<br> 5: TFL_ECE (North
+                    Country Comfort)
+                    <br> 6: DRL_S_ohne_SL via separate TFLeuchte without tail lights, U.S.<br> 7: TFL_S_ohne_SL via separate TFLeuchte without tail light / rear light, ECE</td>
+            </tr>
+            <tr>
+                <td>FLA_VERBAUT</td>
+                <td>aktiv / Werte=01</td>
+                <td>High Beam Assistant is installed</td>
+            </tr>
+            <tr>
+                <td>FLA_AUTO_AKTIV</td>
+                <td>aktiv / Werte=01</td>
+                <td>Set High Beam Assistant Default to Automatic</td>
+            </tr>
+            <tr>
+                <td>Blinkzyklen_Anzahl_Tipp</td>
+                <td>Werte=XX</td>
+                <td>number of comfort turn signal</td>
+            </tr>
+            <tr>
+                <td>Pia_Default_Tippblinken</td>
+                <td> </td>
+                <td>Needed for Blinkzyklen_Anzahl_Tipp</td>
+            </tr>
+            <tr>
+                <td>FLB_NSW</td>
+                <td>aktiv / Werte=01</td>
+                <td>high beam flashing: Control Fog Lights: 0: NSW inactive, 1: NSW blink as FL / TFL</td>
+            </tr>
+            <tr>
+                <td>FOMEHO_FFB_SPFN_TIMESLOT</td>
+                <td> </td>
+                <td>Maximum actuating time of the 4th Button (Special Function key) of the Radio remote control can be activated within the FMH</td>
+            </tr>
+            <tr>
+                <td>FOMEHO_TIMEOUT</td>
+                <td> </td>
+                <td>FollowMeHome: Activation time</td>
+            </tr>
+            <tr>
+                <td>HELLIGKEIT_DRL</td>
+                <td>wert_01 100% / wert_02 50% / wert_03 54% / wert_04 80% / wert_05 51%</td>
+                <td>Daytime Running Light (DRL) Brightness in %</td>
+            </tr>
+            <tr>
+                <td>HELLIGKEIT_FL_BIXENON</td>
+                <td> </td>
+                <td>High Beam Brightness in %</td>
+            </tr>
+            <tr>
+                <td>NSW_AUS_BEI_FL</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Change to nicht_aktiv to enable Fog Lights with High Beams / Flashers</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_AL</td>
+                <td rowspan="6">nicht_aktiv / soft_on / hard_on / soft_on_LED</td>
+                <td>Welcome Lights - Low Beam Lights</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_FL</td>
+                <td>Welcome Lights - High Beam</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_KZL</td>
+                <td>Welcome Lights - License Plate Lights</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_NSW</td>
+                <td>Welcome Lights - Fog Lights</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_POL</td>
+                <td>Welcome Lights - Position Lights</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_SSL</td>
+                <td>Welcome Lights - Tail Lights</td>
+            </tr>
+            <tr>
+                <td>WL_TIMEOUT</td>
+                <td> </td>
+                <td>Welcome Light: Activation time</td>
+            </tr>
+            <tr>
+                <td>OVT_BEI_RUECKFAHRLICHT</td>
+                <td>aktiv</td>
+                <td>Leds on doorhandle will light up when driving backwards</td>
+            </tr>
+            <tr>
+                <td>AUSG_11_NSW_L_IS_INDICATOR</td>
+                <td>aktiv / Werte=01</td>
+                <td>Expected Left Fog as Turn signa</td>
+            </tr>
+            <tr>
+                <td>AUSG_12_NSW_R_IS_INDICATOR</td>
+                <td>aktiv / Werte=01</td>
+                <td>Expected Right Fog as Turn signal</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        ©Copyright 2020. <br> All rights reserved. Leonid Lunin
+    </footer>
+</body>
+
+</html>

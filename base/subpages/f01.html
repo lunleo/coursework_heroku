@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Coder</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
+        </div>
+        <div class="text"> BMW Coding CheatSheets</div>
+        <div class="navbar">
+            <a href="../index.html">
+                <div class="button active">
+                    Home
+                </div>
+            </a>
+            <a href="../subpages/help.html">
+                <div class="button">
+                    Help Desk
+                </div>
+            </a>
+            <a href="contacts.html">
+                <div class="button">
+                    Contacts
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="title">BMW F01, F02, F07 Coding CheatSheet</div>
+    <div class="wrapper">
+        <table class="delivery">
+            <tr>
+                <th>Module</th>
+                <th>Function</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td rowspan="7">ACSM</td>
+                <td>Gurtzustandsanzeige_Beifahrer_GFW_GZA_BF</td>
+                <td rowspan="2">nicht_aktiv – werte=00</td>
+                <td rowspan="2">SeatBelt Reminder Lights OFF</td>
+            </tr>
+            <tr>
+                <td>Gurtzustandsanzeige_Fahrer_GFW_GZA_FA</td>
+            </tr>
+            <tr>
+                <td>Initialwarnung_GWF_IW</td>
+                <td>nicht_aktiv</td>
+                <td>Disable Welcome 3 Gongs</td>
+            </tr>
+            <tr>
+                <td>SBR_PreWarning_Fahrer</td>
+                <td rowspan="4">nicht_aktiv – werte=00</td>
+                <td rowspan="4">SeatBelt Reminders/Sound OFF</td>
+            </tr>
+            <tr>
+                <td>SBR_PreWarning_Beifahrer</td>
+            </tr>
+            <tr>
+                <td>SeatBeltReminder_SBR_Fahrer</td>
+            </tr>
+            <tr>
+                <td>SeatBeltReminder_SBR_Beifahrer</td>
+            </tr>
+            <tr>
+                <td rowspan="9">CAS</td>
+                <td>TC_MSA_DEFAULT_OFF</td>
+                <td>aktiv – werte=01</td>
+                <td>Auto Start/Stop OFF by default</td>
+            </tr>
+            <tr>
+                <td>TC_MSA_MEMORY</td>
+                <td>aktiv – werte=01</td>
+                <td>Auto Start/Stop – Remember LAST Setting</td>
+            </tr>
+            <tr>
+                <td>ER-KEYOUT_AUTOVR</td>
+                <td>aktiv – werte=01</td>
+                <td>Unlock all doors with engine off (Single-Pull Handles)</td>
+            </tr>
+            <tr>
+                <td>TC_LOGIC_KLR_OFF_DOOR</td>
+                <td>aktiv</td>
+                <td>Electronics off when door opened</td>
+            </tr>
+            <tr>
+                <td>KOMFORTSCHLIESSUNG_FB</td>
+                <td>aktiv – werte=00</td>
+                <td rowspan="2">Close Mirrors/Windows/SunRoof from FOB or CA</td>
+            </tr>
+            <tr>
+                <td>KOMFORTSCHLIESSUNG_PA</td>
+                <td>aktiv – werte=00</td>
+            </tr>
+            <tr>
+                <td>KMFRT_SCHLIESSEN</td>
+                <td>werte=00</td>
+                <td>Set Mirror Fold Delay Time</td>
+            </tr>
+            <tr>
+                <td>TC_STARTLOCK_BRAKE</td>
+                <td>nicht_aktiv</td>
+                <td rowspan="2">Start Car by pushing button (hold brake not needed)</td>
+            </tr>
+            <tr>
+                <td>TC_STARTLOCK_DRIVINGREADINESS</td>
+                <td>nicht_aktiv</td>
+            </tr>
+            <tr>
+                <td rowspan="20">FRM</td>
+                <td>U_EFF_POL</td>
+                <td>wert_05__13,0V</td>
+                <td>Angel-Eyes Full Brightness (with headights on)</td>
+            </tr>
+            <tr>
+                <td>ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN</td>
+                <td>aktiv – werte=01</td>
+                <td>Close Mirrors/Windows/SunRoof from FOB or CA</td>
+            </tr>
+            <tr>
+                <td>ASP_BORDSTEINAUTOMATIK_DELTA</td>
+                <td>werte=4B</td>
+                <td>Tilt Passenger Mirror farther down when in reverse</td>
+            </tr>
+            <tr>
+                <td>FH_TUER_AUF_STOP_MAUT</td>
+                <td>nickt_aktiv – werte=00</td>
+                <td>Opening FRONT doors won’t interrupt windows</td>
+            </tr>
+            <tr>
+                <td>DRL_MODUS</td>
+                <td>drl_s – werte=03</td>
+                <td>Rear Tails & Angel Eyes on as DRL</td>
+            </tr>
+            <tr>
+                <td>NSW_AUS_BEI_FL</td>
+                <td>nicht_aktiv – werte=00</td>
+                <td>Fog Lights stay on w/ High Beams</td>
+            </tr>
+            <tr>
+                <td>CS_AMB_BRIGHTNESS</td>
+                <td>Custom HEX value</td>
+                <td>Ambient brightness Upper limit for the ambient brightness</td>
+            </tr>
+            <tr>
+                <td>CS_AMB_MIN_BRIGHTNESS</td>
+                <td>Custom HEX value</td>
+                <td>Min Amb brightness Lower limit of the ambient brightness</td>
+            </tr>
+            <tr>
+                <td>CS_AMB_MAX_OFFSET</td>
+                <td>percentage physical value</td>
+                <td>Max amb brightness offset Brightness</td>
+            </tr>
+            <tr>
+                <td>ESS_ERSCHEINUNGSBILD</td>
+                <td>bremslicht blinkend – werte=02</td>
+                <td rowspan="3">Brake-Force Flashing on Hard Braking</td>
+            </tr>
+            <tr>
+                <td>ESS_ON_VERZ</td>
+                <td>US – werte=0A</td>
+            </tr>
+            <tr>
+                <td>ESS_GESCHW_SCHWELLE</td>
+                <td>US – werte=05</td>
+            </tr>
+            <tr>
+                <td>FLA_AUTO_AKTIV</td>
+                <td>automatisch – werte=01</td>
+                <td rowspan="2">High-Beam Assistant – Auto-On</td>
+            </tr>
+            <tr>
+                <td>FLA_VERBAUT</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td colspan="3">Welcome Lights – Add Lights to Welcome Lights</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_AL</td>
+                <td>nicht_aktiv – werte=00</td>
+                <td>Low Beam</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_FL</td>
+                <td>nicht_aktiv – werte=00</td>
+                <td>High Beam</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_KZL</td>
+                <td>hard_on – werte = 02</td>
+                <td>License Plate</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_NSW</td>
+                <td>hard_on – werte = 02</td>
+                <td>Fog Lights</td>
+            </tr>
+            <tr>
+                <td>WL_FUNKTION_SSL</td>
+                <td>hard_on – werte = 02</td>
+                <td>Tail Lights</td>
+            </tr>
+            <tr>
+                <td rowspan="3">HKFM_LS</td>
+                <td>SCH_FBD</td>
+                <td>aktiv – werte=01</td>
+                <td rowspan="3">Close/Open Trunk from Fob & Kick Panel</td>
+            </tr>
+            <tr>
+                <td>SCH_TOEHKI</td>
+                <td>aktiv – werte=01</td>
+            </tr>
+            <tr>
+                <td>TASTER_FBD</td>
+                <td>aktiv – werte=01</td>
+            </tr>
+            <tr>
+                <td rowspan="46">CIC/NBT</td>
+                <td>HIGH_BEAM_ASSISTANT</td>
+                <td>aktiv</td>
+                <td>High-Beam Assistant – Auto-On</td>
+            </tr>
+            <tr>
+                <td>INBAND_RINGING</td>
+                <td>aktiv</td>
+                <td>Set cell phone ringer as primary</td>
+            </tr>
+            <tr>
+                <td>CE_DEVICE_SPEECH_RECOGNITION</td>
+                <td>aktiv</td>
+                <td>Enable Siri Voice Control</td>
+            </tr>
+            <tr>
+                <td>DOOR_LOCK_AFTER_DRIVING_AWAY</td>
+                <td>nicht_aktiv</td>
+                <td>Disable Auto-Locking of Doors once begin driving</td>
+            </tr>
+            <tr>
+                <td>M_LAPTIMER</td>
+                <td>aktiv</td>
+                <td>Enable ///M LapTmer</td>
+            </tr>
+            <tr>
+                <td>EFF_DYN_SPORT_CID</td>
+                <td>aktiv</td>
+                <td rowspan="4">Enable Sports Displays</td>
+            </tr>
+            <tr>
+                <td>EFF_DYN_SPORT_UNIT</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>KOMBI > DREHMOMENT</td>
+                <td>lb_ft</td>
+            </tr>
+            <tr>
+                <td>KOMBI > LEISTUNG</td>
+                <td>ps</td>
+            </tr>
+            <tr>
+                <td>VOLUME_POPUP_DISPLAY</td>
+                <td>aktiv</td>
+                <td>Enable Volume On-Screen Display</td>
+            </tr>
+            <tr>
+                <td>HUD_TURNSIGNAL</td>
+                <td>aktiv</td>
+                <td>Enable Turn Signals in HUD</td>
+            </tr>
+            <tr>
+                <td>SPEEDLOCK_X_KMH_MAX</td>
+                <td>werte = FF</td>
+                <td rowspan="5">DVD-in-Motion activated</td>
+            </tr>
+            <tr>
+                <td>SPEEDLOCK_X_KMH_MIN</td>
+                <td>werte = FF</td>
+            </tr>
+            <tr>
+                <td>VIDEO_HANDBRAKE</td>
+                <td>nicht_aktiv</td>
+            </tr>
+            <tr>
+                <td>VIDEO_FRONT_LOCKED</td>
+                <td>nicht_aktiv</td>
+            </tr>
+            <tr>
+                <td>VIDEO_SPEEDLOCK_CONDITION</td>
+                <td>none=00</td>
+            </tr>
+            <tr>
+                <td>VOICE_LANGUAGE_RR_US</td>
+                <td>aktiv</td>
+                <td rowspan="3">Change Navi Voice to British English</td>
+            </tr>
+            <tr>
+                <td>LANGUAGE_ENGLISH_UK</td>
+                <td>master</td>
+            </tr>
+            <tr>
+                <td>LANGUAGE_ENGLISH_US</td>
+                <td>nicht_aktiv</td>
+            </tr>
+            <tr>
+                <td>NAVI_TRIP_IMPORT</td>
+                <td>aktiv</td>
+                <td>Navi Trip-Import</td>
+            </tr>
+            <tr>
+                <td>NAVI_FUELSTOP_PROPOSAL</td>
+                <td>aktiv</td>
+                <td>Navi Fuel-Stop Proposal Along Route</td>
+            </tr>
+            <tr>
+                <td>ENT_CODEC_XVID</td>
+                <td>aktiv</td>
+                <td rowspan="3">Enable Video Files from USB</td>
+            </tr>
+            <tr>
+                <td>ENT_CODEC_XVCD</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>API_USB_VIDEO</td>
+                <td>both</td>
+            </tr>
+            <tr>
+                <td>NAVI_POSITION_MENU</td>
+                <td>aktiv</td>
+                <td>Add GPS Current Location to Navi Menu Items</td>
+            </tr>
+            <tr>
+                <td>HUD_TURNSIGNAL</td>
+                <td>aktiv</td>
+                <td>Add Turn-Signals to HUD</td>
+            </tr>
+            <tr>
+                <td>RADIO_WEATHERBAND</td>
+                <td>aktiv</td>
+                <td>Add Weather Band Radio (CIC Only)</td>
+            </tr>
+            <tr>
+                <td>ENT_MC_VIDEO_SUPPORT</td>
+                <td>aktiv</td>
+                <td>Saving video files to NBT Hard Drive</td>
+            </tr>
+            <tr>
+                <td>OFFICE_MESSAGES_SPEEDLOCK_CONDITION</td>
+                <td>nicht_aktiv</td>
+                <td>Disable Office Function Speed Lock-Out</td>
+            </tr>
+            <tr>
+                <td>PIM_DRIVING_TEXT_LENGTH</td>
+                <td>whole text_07</td>
+                <td>Enable Full Text Lines in Office While Driving</td>
+            </tr>
+            <tr>
+                <td>ACOUSTICAL_LOCK_CONFIRM</td>
+                <td>nicht_aktiv</td>
+                <td>Disable Audible Chirp/Beep When Locking Car</td>
+            </tr>
+            <tr>
+                <td>SPEECH_2_TEXT</td>
+                <td>aktiv</td>
+                <td>Enable Speeach Input for E-Mail or SMS</td>
+            </tr>
+            <tr>
+                <td>TIMESTAMP_DISPLAY</td>
+                <td>aktiv</td>
+                <td>Enable Time-Stamp Display for Call Log</td>
+            </tr>
+            <tr>
+                <td>RDC_SAFETY</td>
+                <td>aktiv</td>
+                <td>Add Temperature & PSI to tire monitor screen</td>
+            </tr>
+            <tr>
+                <td>LEGAL_DISCLAIMER_TIME</td>
+                <td>kein_ld</td>
+                <td rowspan="3">Disable Legal Disclaimers</td>
+            </tr>
+            <tr>
+                <td>MACRO_CAM_LEGALDISCLAIMER</td>
+                <td>kein_ld</td>
+            </tr>
+            <tr>
+                <td>MACRO_NVICAM_LDISCLAIMER</td>
+                <td>kein_ld</td>
+            </tr>
+            <tr>
+                <td>STARTUP_EMBLEM</td>
+                <td>variant_01</td>
+                <td>Change i-Drive Animation to ///M Logo</td>
+            </tr>
+            <tr>
+                <td>IPCE_WEBSERVER</td>
+                <td>aktiv</td>
+                <td>Enable IPCE Web Server @ 172.16.222.1</td>
+            </tr>
+            <tr>
+                <td>ENT_MC_WLAN_STREAM_DMP_COVERART</td>
+                <td>aktiv</td>
+                <td rowspan="6">Enable WiFi Hot-Spot</td>
+            </tr>
+            <tr>
+                <td>ENT_MC_WLAN_STREAM_DMP_VIDEO</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>ENT_MC_WLAN_STREAM_DMP</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>WLAN_STATUS</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>WLAN_MODUS</td>
+                <td>ap</td>
+            </tr>
+            <tr>
+                <td>WLAN_SIGNAL_STRENGTH</td>
+                <td>outdoor</td>
+            </tr>
+            <tr>
+                <td>ENTWICKLER_MENUE</td>
+                <td>aktiv 01</td>
+                <td>Enable Developer Menu</td>
+            </tr>
+            <tr>
+                <td rowspan="2">IHKA</td>
+                <td>OFF_MEMORY</td>
+                <td>aktiv-werte=01</td>
+                <td>A/C System Remembers Last Setting</td>
+            </tr>
+            <tr>
+                <td>MEMORY_UMLUFT</td>
+                <td>aktiv</td>
+                <td>Always Remember Air ReCirculating</td>
+            </tr>
+            <tr>
+                <td rowspan="7">JBBF</td>
+                <td>FH_TUER_AUF_STOP_MAUT</td>
+                <td>nicht_aktiv – werte=00</td>
+                <td>Opening REAR doors won’t interrupt windows</td>
+            </tr>
+            <tr>
+                <td>SCHEINWERFERREINIGUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Disable Headlight Washers</td>
+            </tr>
+            <tr>
+                <td>RLS_FLC_SCHWELLWERT_SATZ_1</td>
+                <td>werte=05</td>
+                <td rowspan="3">Auto Wiper Sensitivity Increase</td>
+            </tr>
+            <tr>
+                <td>RLS_FLC_SCHWELLWERT_SATZ_2</td>
+                <td>werte=09</td>
+            </tr>
+            <tr>
+                <td>RLS_FLC_SCHWELLWERT_SATZ_3</td>
+                <td>werte=0D</td>
+            </tr>
+            <tr>
+                <td>RLS_DEF_FLC_SCHWELLWERT_SATZ</td>
+                <td rowspan="2">normal=normal <br> empfindlich=sensitive <br> sehr_empfindlich=very sens<br> unempfindlich = insensitive</td>
+                <td rowspan="2">Auto Light Sensitivity Increase</td>
+            </tr>
+            <tr>
+                <td>RLS_FLC_SCHWELLWERT_SATZ</td>
+            </tr>
+            <tr>
+                <td>KAFAS2</td>
+                <td>FLA_ON_OFF</td>
+                <td>aktiv – werte=01</td>
+                <td>High-Beam Assistant – Auto-On</td>
+            </tr>
+            <tr>
+                <td rowspan="8">KOMBI</td>
+                <td>BC_DIGITAL_V</td>
+                <td>aktiv-werte=01</td>
+                <td>Show Digital Speed in MPH in Cluster</td>
+            </tr>
+            <tr>
+                <td>HUD_PIA_BLINKER</td>
+                <td>aktiv</td>
+                <td rowspan="2">Show Turn Signals in HUD</td>
+            </tr>
+            <tr>
+                <td>BLINKER_HUD_ENABLE</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>GPS_UHR</td>
+                <td>aktiv</td>
+                <td>Enable GPS-Sync for Clock</td>
+            </tr>
+            <tr>
+                <td>HUD_ENTERTAINMENT_ENABLE</td>
+                <td>aktiv</td>
+                <td rowspan="4">Enable HUD for Entertainment & Phone List</td>
+            </tr>
+            <tr>
+                <td>HUD_TELEFONANRUF_ENABLE</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>HUD_TELEFONBUCH_ENABLE</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td>HUD_ENTERTAINMENTLIST</td>
+                <td>aktiv</td>
+            </tr>
+            <tr>
+                <td rowspan="2">PDC</td>
+                <td>D_SCHWELLE_2</td>
+                <td>FF</td>
+                <td rowspan="2">Enable Rear-View Camera at all Speeds</td>
+            </tr>
+            <tr>
+                <td>V_SCHWELLE_2</td>
+                <td>FF</td>
+            </tr>
+            <tr>
+                <td>SZL</td>
+                <td>Lenkrad_Schaltpaddles</td>
+                <td>aktiv</td>
+                <td>Enable Paddle Shifters (for Retrofits)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">TRSVC</td>
+                <td>SV_Activate_Speed_Limit</td>
+                <td>FF</td>
+                <td rowspan="2">Enable Side-View Cameras at all Speeds</td>
+            </tr>
+            <tr>
+                <td>SV_Deactivate_Speed</td>
+                <td>FF</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <footer class="footer">
+        ©Copyright 2020. <br> All rights reserved. Leonid Lunin
+    </footer>
+</body>
+
+</html>

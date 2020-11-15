@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Coder</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
+        </div>
+        <div class="text"> BMW Coding CheatSheets</div>
+        <div class="navbar">
+            <a href="../index.html">
+                <div class="button active">
+                    Home
+                </div>
+            </a>
+            <a href="../subpages/help.html">
+                <div class="button">
+                    Help Desk
+                </div>
+            </a>
+            <a href="contacts.html">
+                <div class="button">
+                    Contacts
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="title">BMW F25, F26 Coding CheatSheet</div>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Function</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td rowspan="2">CAS</td>
+                <td>ER_KEYOUT_AUTOVR</td>
+                <td>aktiv / Werte=01</td>
+                <td>Unlock doors when engine is stopped</td>
+            </tr>
+            <tr>
+                <td>KOMFORTSCHLIESSUNG_FB</td>
+                <td>aktiv / Werte=01</td>
+                <td rowspan="2">Comfort Closing via FOB</td>
+            </tr>
+            <tr>
+                <td>FRM</td>
+                <td>ASP_BEIKLAPPEN_BEI_KOMFORTSC HLIESSEN</td>
+                <td>aktiv / Werte=01</td>
+            </tr>
+            <tr>
+                <td>CAS</td>
+                <td>KOMFORTSCHLIESSUNG_PA</td>
+                <td>aktiv / Werte=01</td>
+                <td rowspan="2">Comfort Closing via Comfort Access</td>
+            </tr>
+            <tr>
+                <td>FRM</td>
+                <td>ASP_BEIKLAPPEN_BEI_KOMFORTSC HLIESSEN</td>
+                <td>aktiv / Werte=01</td>
+            </tr>
+            <tr>
+                <td rowspan="4">HKFM</td>
+                <td>SCH_FBD</td>
+                <td>aktiv / Werte=01</td>
+                <td rowspan="2">Close Trunk/Tailgate through button on FOB</td>
+            </tr>
+            <tr>
+                <td>TASTER_FBD</td>
+                <td>aktiv / Werte=01</td>
+            </tr>
+            <tr>
+                <td>SCH_TOEHKI</td>
+                <td>aktiv / Werte=01</td>
+                <td rowspan="2">Close Trunk/Tailgate through button on driver side</td>
+            </tr>
+            <tr>
+                <td>TASTER_FBD</td>
+                <td>aktiv / Werte=01</td>
+            </tr>
+            <tr>
+                <td rowspan="10">HU_CIC</td>
+                <td>SPEEDLOCK_X_KMH_MAX</td>
+                <td>value = FF</td>
+                <td rowspan="3">DVD in Motion</td>
+            </tr>
+            <tr>
+                <td>SPEEDLOCK_X_KMH_MIN</td>
+                <td>value = FF</td>
+            </tr>
+            <tr>
+                <td>VIDEO_NUR_MIT_HANDBREMSE</td>
+                <td>nicht_aktiv / Werte=00</td>
+            </tr>
+            <tr>
+                <td>LEGAL_DISCLAIMER_TIME</td>
+                <td>kein_ld</td>
+                <td>Disables iDrive legal disclaimer during iDrive startup</td>
+            </tr>
+            <tr>
+                <td>MACRO_CAM_LEGALDISCLAIMER</td>
+                <td>kein_ld</td>
+                <td rowspan="2">Disables camera legal disclaimer</td>
+            </tr>
+            <tr>
+                <td>MACRO_NIVICAM_LDISCLAIMER</td>
+                <td>kein_ld</td>
+            </tr>
+            <tr>
+                <td>RDC_SAFETY</td>
+                <td>aktiv / Werte=01</td>
+                <td>Add Pressure and Temperature to TPMS Screen</td>
+            </tr>
+            <tr>
+                <td>RADIO_WEATHERBAND</td>
+                <td>aktiv / Werte=01</td>
+                <td>Weather Band Channels in Radio</td>
+            </tr>
+            <tr>
+                <td>L7_SURROUND_CONFIG</td>
+                <td>aktiv / Werte=01</td>
+                <td>Slider Adjustment in Audio Settings</td>
+            </tr>
+            <tr>
+                <td>NAVI_FUELSTOP_PROPOSAL</td>
+                <td>aktiv / Werte=01</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">CMB_MEDIA</td>
+                <td>INBAND_RINGING</td>
+                <td>aktiv / Werte=01</td>
+                <td>Use telephone ringtone</td>
+            </tr>
+            <tr>
+                <td>MY_INFO_SUPPORTED_POIS</td>
+                <td></td>
+                <td>Increase CIC stored addresses/messages from 25 to 50</td>
+            </tr>
+            <tr>
+                <td rowspan="4">PDC</td>
+                <td>D_SCHWELLE_1</td>
+                <td>Werte=FF</td>
+                <td>distance in meters to disable top camera view</td>
+            </tr>
+            <tr>
+                <td>D_SCHWELLE_2</td>
+                <td>Werte=FF</td>
+                <td>distance in meters to disable rear camera view</td>
+            </tr>
+            <tr>
+                <td>V_SCHWELLE_1</td>
+                <td>Werte=FF</td>
+                <td>speed to disable top camera view</td>
+            </tr>
+            <tr>
+                <td>V_SCHWELLE_2</td>
+                <td>Werte=FF</td>
+                <td>speed to disable rear camera view</td>
+            </tr>
+            <tr>
+                <td rowspan="2">TRSVC</td>
+                <td>SV_Activate_Speed_Limit</td>
+                <td>Werte=FF</td>
+                <td>Maximum speed at which side view may be activated</td>
+            </tr>
+            <tr>
+                <td>SV_Deactivate_Speed</td>
+                <td>Werte=FF</td>
+                <td>Speed above which side view will deactivated</td>
+            </tr>
+            <tr>
+                <td>KOMBI</td>
+                <td>BC_DIGITAL_V</td>
+                <td>aktiv / Werte=01</td>
+                <td>Digital Speed in BC</td>
+            </tr>
+            <tr>
+                <td rowspan="6">ACSM</td>
+                <td>Gurtzustandsanzeige_Fahrer_GWF_GZA_FA</td>
+                <td>not active = 00</td>
+                <td>disable seat belt status display - driver</td>
+            </tr>
+            <tr>
+                <td>Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF</td>
+                <td>not active = 00</td>
+                <td>disable seat belt status display - passenger</td>
+            </tr>
+            <tr>
+                <td>SBR_FA_GWF_SBR_FA</td>
+                <td>not active = 00</td>
+                <td>disable seat belt reminder - driver</td>
+            </tr>
+            <tr>
+                <td>SBR_BF_GWF_SBR_BF</td>
+                <td>not active = 00</td>
+                <td>disable seat belt reminder - passenger</td>
+            </tr>
+            <tr>
+                <td>SPW_FA</td>
+                <td>not active = 00</td>
+                <td>disable sound on disconnect SB - driver</td>
+            </tr>
+            <tr>
+                <td>SPW_BF</td>
+                <td>not active = 00</td>
+                <td>disable sound on disconnect SB - passenger</td>
+            </tr>
+            <tr>
+                <td>ICM</td>
+                <td>IcmKod_B_InitEco</td>
+                <td>verbaut</td>
+                <td>Eco Pro Mode always on</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        ©Copyright 2020. <br> All rights reserved. Leonid Lunin
+    </footer>
+</body>
+
+</html>

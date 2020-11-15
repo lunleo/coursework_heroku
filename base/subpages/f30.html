@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Coder</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
+        </div>
+        <div class="text"> BMW Coding CheatSheets</div>
+        <div class="navbar">
+            <a href="../index.html">
+                <div class="button active">
+                    Home
+                </div>
+            </a>
+            <a href="../subpages/help.html">
+                <div class="button">
+                    Help Desk
+                </div>
+            </a>
+            <a href="contacts.html">
+                <div class="button">
+                    Contacts
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="title">BMW F30, F32 Coding CheatSheet</div>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Function</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td colspan="4">Angel LED Brightness (Xenon Headlamps or LED Headlamps required)
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="6">FEM_BODY</td>
+                <td>MAPPING_PARKL_V_L_PWM_LEVEL_1</td>
+                <td>32</td>
+                <td>Change Parking Light Brightness (Left)</td>
+            </tr>
+            <tr>
+                <td>MAPPING_PARKL_V_R_PWM_LEVEL_1</td>
+                <td>32</td>
+                <td>Change Parking Light Brightness (Right)</td>
+            </tr>
+            <tr>
+                <td>MAPPING_STANDL_V_L_PWM_LEVEL_1</td>
+                <td>32</td>
+                <td>Change Angel Eye Brightness when headlamps on (Left)</td>
+            </tr>
+            <tr>
+                <td>MAPPING_STANDL_V_R_PWM_LEVEL_1</td>
+                <td>32</td>
+                <td>Change Angel Eye Brightness when headlamps on (Right)</td>
+            </tr>
+            <tr>
+                <td>MAPPING_TAGFAHRL_V_L_PWM_LEVEL_1</td>
+                <td>32</td>
+                <td>Change Day-Run Light Brightness (Left)</td>
+            </tr>
+            <tr>
+                <td>MAPPING_TAGFAHRL_V_R_PWM_LEVEL_1</td>
+                <td>32</td>
+                <td>Change Day-Run Light Brightness (Right)</td>
+            </tr>
+            <tr>
+                <td colspan="4">Cornering Lights (Fog Lamps) & Fog Lamp Welcome Lights
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="8">FEM_BODY</td>
+                <td>C_CLC_ENA</td>
+                <td>F030enable</td>
+                <td>Enables cornering lights - Part 1</td>
+            </tr>
+            <tr>
+                <td>C_BLC_ENA</td>
+                <td>aktiv</td>
+                <td>Enables cornering lights - Part 2</td>
+            </tr>
+            <tr>
+                <td>KL_ENABLE_LI</td>
+                <td>KL_Ein</td>
+                <td>Enables cornering lights - Part 3</td>
+            </tr>
+            <tr>
+                <td>KL_ENABLE_RE</td>
+                <td>KL_Ein</td>
+                <td>Enables cornering lights - Part 4</td>
+            </tr>
+            <tr>
+                <td>MAPPING_abbiegel_L_output</td>
+                <td>nsw_l</td>
+                <td>Enables cornering lights - Part 5</td>
+            </tr>
+            <tr>
+                <td>MAPPING_abbiegel_R_output</td>
+                <td>nsw_r</td>
+                <td>Enables cornering lights - Part 6</td>
+            </tr>
+            <tr>
+                <td>MAPPING_NEBELSCHW_L_PART_OF_WL</td>
+                <td>Soft_On</td>
+                <td>Turns on Left Fog Lamp with Welcome Lights</td>
+            </tr>
+            <tr>
+                <td>MAPPING_NEBELSCHW_R_PART_OF_WL</td>
+                <td>Soft_On</td>
+                <td>Turns on Right Fog Lamp with Welcome Lights</td>
+            </tr>
+            <tr>
+                <td colspan="4">Day-­Running Lights & Activate Rear Fog Lamps
+                </td>
+
+            </tr>
+            <tr>
+                <td>HU_NBT</td>
+                <td>Daydriving_light</td>
+                <td>aktiv</td>
+                <td>Shows Day-Running Lights option in iDrive Settings, in Lighting</td>
+            </tr>
+            <tr>
+                <td>FEM_BODY</td>
+                <td>TFL_MODUS</td>
+                <td>Tfl_s (0, A) or Drl_s (0, A, P)</td>
+                <td>Enables Day-Running Lights. Letters: (0: Off, A: Auto, P: Parking)</td>
+            </tr>
+            <tr>
+                <td rowspan="4">REM</td>
+                <td>MAPPING_TAGFAHRL_H2_L_OUTPUT</td>
+                <td>sl_2_l</td>
+                <td>Turns On Left Tail-light (Inner Part) on with DRL</td>
+            </tr>
+            <tr>
+                <td>MAPPING_TAGFAHRL_H2_R_OUTPUT</td>
+                <td>sl_2_r</td>
+                <td>Turns On Right Tail-light (Inner Part) on with DRL</td>
+            </tr>
+            <tr>
+                <td>MAPPING_TAGFAHRL_H_L_OUTPUT</td>
+                <td>sl_l</td>
+                <td>Turns On Left Tail-light (Outer Part) on with DRL</td>
+            </tr>
+            <tr>
+                <td>MAPPING_TAGFAHRL_H_R_OUTPUT</td>
+                <td>ls_r</td>
+                <td>Turns On Right Tail-light (Outer Part) on with DRL</td>
+            </tr>
+            <tr>
+                <td>FEM_BODY</td>
+                <td>NSL_Verbaut</td>
+                <td>Verbaut</td>
+                <td>Activate Rear Fog Lamp Switch - Part 1</td>
+            </tr>
+            <tr>
+                <td rowspan="4">REM</td>
+                <td>Mapping_Nebelschlussl_L_output</td>
+                <td>nsl_l</td>
+                <td>Activate Rear-Left Fog Lamp - Part 2</td>
+            </tr>
+            <tr>
+                <td>Mapping_Nebelschlussl_L_Function</td>
+                <td>nebelschlusslicht</td>
+                <td>Activate Rear-Left Fog Lamp - Part 3</td>
+            </tr>
+            <tr>
+                <td>Mapping_Nebelschlussl_R_output</td>
+                <td>nsl_r</td>
+                <td>Activate Rear-Right Fog Lamp - Part 4</td>
+            </tr>
+            <tr>
+                <td>Mapping_Nebelschlussl_R_Function</td>
+                <td>nebelschlusslicht</td>
+                <td>Activate Rear-Right Fog Lamp - Part 5</td>
+            </tr>
+            <tr>
+                <td colspan="4">Assorted Lighting Features
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="14">FEM_BODY</td>
+                <td>RLS_DEF_FLC_SCHWELLWERT_SATZ</td>
+                <td>empfindlich-sensitive <br> sehr_empfindlich-very sensitive <br> unempfindlich-insensitive <br> Tagfahrlicht -DRL </td>
+                <td>Reduce the Automatic headlamp sensitivity</td>
+            </tr>
+            <tr>
+                <td>BLINKZYKLEN_ANZAHL_TIPP</td>
+                <td>werte = X-1</td>
+                <td>Change the triple blinker blinks to any amount.</td>
+            </tr>
+            <tr>
+                <td>ESS_AKTIVIERBARER_AUSGANG</td>
+                <td>bremslicht_blinkend</td>
+                <td>Change Emergency brake light from Inner Brake Lights to Flashing Lights</td>
+            </tr>
+            <tr>
+                <td>ESS_AKTIVIERUNG_GESCHW</td>
+                <td>User Value</td>
+                <td>Threshold Speed for Activating Emergency brake light</td>
+            </tr>
+            <tr>
+                <td>MAPPING_SIDEMARKER_L_OUTPUT</td>
+                <td>off</td>
+                <td>Turns off the left front side-marker</td>
+            </tr>
+            <tr>
+                <td>MAPPING_SIDEMARKER_R_OUTPUT</td>
+                <td>off</td>
+                <td>Turns off the right front side-marker</td>
+            </tr>
+            <tr>
+                <td>OVT_BEI_RUECKFAHRLICHT</td>
+                <td>aktiv</td>
+                <td>Door handle LEDs light up when engaged in Reverse</td>
+            </tr>
+            <tr>
+                <td>NSW_AUS_BEI_FL</td>
+                <td>nicht_aktiv</td>
+                <td>Allows Fog Lights to remain on when high beams are active</td>
+            </tr>
+            <tr>
+                <td>NSW_EIN_AUF_LDS_STL</td>
+                <td>aktiv</td>
+                <td>Allows Fog Lights to turn on while only parking lights are on</td>
+            </tr>
+            <tr>
+                <td>Ambiente_Helligkeit</td>
+                <td>Custom Value</td>
+                <td>Brightness of Interior Ambient Lighting</td>
+            </tr>
+            <tr>
+                <td>Ambiente_Nachfuehrung</td>
+                <td>nicht aktiv</td>
+                <td>Separates Ambient Light Level and Instrument Cluster Light Level</td>
+            </tr>
+            <tr>
+                <td>IB_Einschalt_begr_lok</td>
+                <td>Custom Value</td>
+                <td>The time the interior lights stay illuminated while locking</td>
+            </tr>
+            <tr>
+                <td>IB_Einschalt_begr_ulok</td>
+                <td>Custom Value</td>
+                <td>The time the interior lights stay illuminated while unlocking</td>
+            </tr>
+            <tr>
+                <td>WL_HELLIGKEIT</td>
+                <td>Custom Value</td>
+                <td>Brightness of Welcome Lights</td>
+            </tr>
+            <tr>
+                <td colspan="4">LED Replacement Turn Signal Bulbs Activation
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="6">FEM_BODY</td>
+                <td>FRA_V_L_KALTUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Front-Left Turn Signal Bulb Cold Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_V_L_WARMUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Front-Left Turn Signal Bulb Warm Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_V_L_IS_LED</td>
+                <td>aktiv</td>
+                <td>Enables Front-Left LED bulb</td>
+            </tr>
+            <tr>
+                <td>FRA_V_R_KALTUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Front-Right Turn Signal Bulb Cold Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_V_R_WARMUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Front-Right Turn Signal Bulb Warm Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_V_R_IS_LED</td>
+                <td>aktiv</td>
+                <td>Enables Front-Right LED bulb</td>
+            </tr>
+            <tr>
+                <td rowspan="6">FEM_BODY/REM</td>
+                <td>FRA_H_L_KALTUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Rear-Left Turn Signal Bulb Cold Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_H_L_WARMUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Rear-Left Turn Signal Bulb Warm Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_H_L_IS_LED</td>
+                <td>aktiv</td>
+                <td>Enables Rear-Left LED bulb <br> **May cause Check Engine Light**</td>
+            </tr>
+            <tr>
+                <td>FRA_H_R_KALTUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Rear-Right Turn Signal Bulb Cold Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_H_R_WARMUEBERWACHUNG</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off Rear-Right Turn Signal Bulb Warm Monitoring</td>
+            </tr>
+            <tr>
+                <td>FRA_H_R_IS_LED</td>
+                <td>aktiv</td>
+                <td>Enables Rear-Right LED bulb<br> **May cause Check Engine Light**</td>
+            </tr>
+            <tr>
+                <td colspan="4">Instrument Cluster</td>
+            </tr>
+            <tr>
+                <td rowspan="10">KOMBI</td>
+                <td>BC_AUTORESET_ZEIT</td>
+                <td>aktiv</td>
+                <td>Trip Computer auto-reset time. <br> Value in HEX for hours</td>
+            </tr>
+            <tr>
+                <td>BC_DIGITAL_V</td>
+                <td>User Choice</td>
+                <td>Adds the vehicle’s current speed to the BC</td>
+            </tr>
+            <tr>
+                <td>BC_V_KORREKTUR</td>
+                <td>nicht_aktiv</td>
+                <td>Turns off speed correction and displays actual speed</td>
+            </tr>
+            <tr>
+                <td>BMW_LOGO</td>
+                <td>mpm</td>
+                <td>Changes KOMBI/HUD startup to M/// Performance</td>
+            </tr>
+            <tr>
+                <td>GPS_UHR (Intended for HU_CIC cars)</td>
+                <td>aktiv</td>
+                <td>Sets the clock via GPS signal</td>
+            </tr>
+            <tr>
+                <td>MSA_VERFUEGBARANZEIGE_ENABLE</td>
+                <td>nicht_aktiv</td>
+                <td>Enables/Disables the “Auto Start-Stop Off” notification in KOMBI</td>
+            </tr>
+            <tr>
+                <td>DIM_NACHT_EIN</td>
+                <td>werte = FF</td>
+                <td>Changes orange night colors of KOMBI to be white at night</td>
+            </tr>
+            <tr>
+                <td>FDS_MENUE_TEXT_1/2/3/4</td>
+                <td>menue_3</td>
+                <td>Enables Sport + on KOMBI</td>
+            </tr>
+            <tr>
+                <td>FDS_MENUE_SIGNAL_1/2/3/4</td>
+                <td>menue_3</td>
+                <td>Enables Sport + on KOMBI</td>
+            </tr>
+            <tr>
+                <td>SLD_ENABLE</td>
+                <td>aktiv</td>
+                <td>Enables LIM Function</td>
+            </tr>
+            <tr>
+                <td rowspan="3">ICM</td>
+                <td>SLD_Funktion</td>
+                <td>aktiv</td>
+                <td>Enables LIM Function</td>
+            </tr>
+            <tr>
+                <td>C_Umschaltung_ACC_DCC</td>
+                <td>zugelassen</td>
+                <td>Enables LIM Function</td>
+            </tr>
+            <tr>
+                <td>LDM_SET_Taste</td>
+                <td>nur_SET__O</td>
+                <td>Enables LIM Function</td>
+            </tr>
+            <tr>
+                <td colspan="4">Safety Features & Precautions</td>
+            </tr>
+            <tr>
+                <td rowspan="2">HU_CIC/NBT</td>
+                <td>LEGAL_DISCLAIMER_TIME</td>
+                <td>kein_ld</td>
+                <td>Removes iDrive Initial Disclaimer</td>
+            </tr>
+            <tr>
+                <td>MACRO_CAM_LEGALDISCLAIMER</td>
+                <td>kein_ld</td>
+                <td>Removes disclaimer for all cameras and PDC</td>
+            </tr>
+            <tr>
+                <td>KAFAS</td>
+                <td>ROAD_EDGE_WARNING_ENABLED</td>
+                <td>aktiv</td>
+                <td>Add grass and curb detection to Lane Departure</td>
+            </tr>
+            <tr>
+                <td>ICM</td>
+                <td>C_ZSW_Aktivierunggeschwindigkeit_Funktion_low</td>
+                <td>20_kmh</td>
+                <td>Change Active Blind Spot Activation Speed</td>
+            </tr>
+            <tr>
+                <td rowspan="10">ACSM</td>
+                <td>GWF_SBR_WARNDAUER</td>
+                <td>Werte = 01 (for 1 second)</td>
+                <td>Duration of the Seatbelt Reminder warnings</td>
+            </tr>
+            <tr>
+                <td>Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable seat belt status display - passenger</td>
+            </tr>
+            <tr>
+                <td>Gurtzustandsanzeige_Fahrer_GWF_GZA_FA</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable seat belt status display - driver</td>
+            </tr>
+            <tr>
+                <td>SBR_BF_GWF_SBR_BF</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable seat belt reminder - passenger</td>
+            </tr>
+            <tr>
+                <td>SBR_FA_GWF_SBR_FA</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable seat belt reminder - driver</td>
+            </tr>
+            <tr>
+                <td>SeatBeltReminder_SBR_Beifahrer</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable seat belt reminder - passenger</td>
+            </tr>
+            <tr>
+                <td>SeatBeltReminder_SBR_Fahrer</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable seat belt reminder - driver</td>
+            </tr>
+            <tr>
+                <td>SBR_PreWarning_Beifahrer / SPW_BF</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable sound on disconnect SB - passenger</td>
+            </tr>
+            <tr>
+                <td>SBR_PreWarning_Fahrer / SPW_FA</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable sound on disconnect SB - driver</td>
+            </tr>
+            <tr>
+                <td>Initialwarnung_GWF_IW</td>
+                <td>nicht_aktiv / Werte=00</td>
+                <td>Disable initial 3 chime seatbelt warning</td>
+            </tr>
+            <tr>
+                <td colspan="4">Vehicle Drivetrain Features, Sport Features, & Active Sound Design</td>
+            </tr>
+            <tr>
+                <td rowspan="2">ASD</td>
+                <td>Model Range</td>
+                <td></td>
+                <td>Change Active Sound Design (Part 1) <br> **See above desc.**</td>
+            </tr>
+            <tr>
+                <td>Engine</td>
+                <td></td>
+                <td>Change Active Sound Design (Part 2) <br> **See above desc.**</td>
+            </tr>
+            <tr>
+                <td>EGS</td>
+                <td>Applikation_LC / LC</td>
+                <td>aktiv</td>
+                <td>Enable Launch Control (2TB Required)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">FEM_BODY</td>
+                <td>TCM_MSA_DEFAULT_OFF</td>
+                <td>aktiv</td>
+                <td>Auto-Start-Stop set to ‘Off’ at every startup</td>
+            </tr>
+            <tr>
+                <td>TCM_MSA_MEMORY</td>
+                <td>aktiv</td>
+                <td>Auto-Start-Stop Memory</td>
+            </tr>
+            <tr>
+                <td rowspan="2">HU_CIC</td>
+                <td>EFF_DYN_SPORT_CID</td>
+                <td>aktiv</td>
+                <td>Enables Sports Displays on non-Navi iDrive <br>(Doesn't work for diesel.)</td>
+            </tr>
+            <tr>
+                <td>EFF_DYN_SPORT_UNIT</td>
+                <td>aktiv</td>
+                <td>Adds Sports Display</td>
+            </tr>
+            <tr>
+                <td rowspan="2">HU_NBT</td>
+                <td>Macro_fds</td>
+                <td>popup_and_config</td>
+                <td>Configure sport mode in iDrive (Part 1)</td>
+            </tr>
+            <tr>
+                <td>ICMKOD_B_SPORTINDIVIDUALISIERBAR</td>
+                <td>ein (01)</td>
+                <td>Configure sport mode in iDrive (Part 2)</td>
+            </tr>
+            <tr>
+                <td rowspan="3">ICM</td>
+                <td>C_Abstandsstufe_init</td>
+                <td>Stufe_1</td>
+                <td>The initial following distance for Active Cruise Control is the closest distance</td>
+            </tr>
+            <tr>
+                <td>ICMKOD_B_InitEco</td>
+                <td>verbaut</td>
+                <td>The vehicle will start in drive mode Eco Pro every startup</td>
+            </tr>
+            <tr>
+                <td>ICMKOD_B_SPORTLENKUNG</td>
+                <td>aktiv</td>
+                <td>Enables Sport+ mode</td>
+            </tr>
+            <tr>
+                <td>KOMBI</td>
+                <td>R_GANG_AKUSTIK_ENABLE</td>
+                <td>aktiv</td>
+                <td>Enables the Reverse Gear Gong (Chime)</td>
+            </tr>
+
+        </table>
+    </div>
+    <footer class="footer">
+        ©Copyright 2020. <br> All rights reserved. Leonid Lunin
+    </footer>
+</body>
+
+</html>
