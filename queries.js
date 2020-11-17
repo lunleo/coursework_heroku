@@ -9,7 +9,7 @@ const pool = new Pool({
 })
 
 const getData = (req, res) => {
-  pool.query('SELECT * FROM public.contacts', (err, data) => {
+  pool.query('SELECT * FROM "public".contacts', (err, data) => {
       res.header("Access-Control-Allow-Origin", "*");
     if (err) {throw err}
     res.status(200).json(data.rows)

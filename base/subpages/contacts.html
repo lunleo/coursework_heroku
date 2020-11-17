@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../js/ajax-utils.js" type="text/javascript"></script>
+    <script src="../js/script.js" type="text/javascript"></script>
 
 
 </head>
@@ -40,12 +42,12 @@
     </div>
     <div class="container">
         <div class="contact">
-            Ukraine <br> Kyiv, <br> Darnyts'kyi district,<br> 11 Zroshuvalna Street<br><br> Yevhen Sedniev<br>
-            <a href="tel:+380672700672">(067)270-06-72</a> <br><br> Leonid Lunin <br>
-            <a href="tel:+380678545590">(067)854-55-90</a> <br><a href="mail:luna.lenya@gmail.com">luna.lenya@gmail.com</a>
+            <span id="country"></span> <br> <span id="city"></span>, <br> <span id="district"></span>,<br> <span id="address_line"></span><br><br> <span id="name1"></span><br>
+            <a id="tel1"></a> <br><br> <span id="name2"></span> <br>
+            <a id="tel2"></a> <br><a id="email2"></a>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.3378727669483!2d30.683026315730825!3d50.43480697947324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zNTDCsDI2JzA1LjMiTiAzMMKwNDEnMDYuOCJF!5e0!3m2!1sru!2sua!4v1604868322530!5m2!1sru!2sua"
+            <iframe id="map"
                 width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
