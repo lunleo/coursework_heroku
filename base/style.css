@@ -52,7 +52,7 @@ body {
         text-align: center;
     }
     .menu a {
-        padding: 10%;
+        padding: 4%;
     }
     .container {
         display: flex;
@@ -82,7 +82,7 @@ body {
         font-size: 1rem;
     }
     .menu a {
-        padding: 7%;
+        padding: 3%;
     }
     .map {
         margin: 0 auto;
@@ -111,13 +111,14 @@ body {
 }
 
 .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 }
 
 .menu a {
+    flex: 0 0 33.3%;
     text-decoration: none;
     color: black;
     transition: 0.2s;
